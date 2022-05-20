@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    margin: 0;
+    background-color: black;
+    font-family: 'Roboto';
+}
+
+.container{
+    position: relative;
+    top: -70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 100px;
+}
+
+.upper-part {
+    background-size: cover;
+    background-position: center;
+    background-image: url(https://cdn.ayo.so/6442f41d9b0b17d270d04c6a2616b6f15b8e97ff996b6dbb.webp);
+    height: 40vh;
+}
+
+.profile-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.profile-img img {
+    position: relative;
+    z-index: 1;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    border: 5px solid black;
+}
+
+.profile-img h2 {
+    position: relative;
+    z-index: 1;
+    color: rgb(202, 201, 201);
+    font-family: sans-serif;
+}
+
+.profile-img p {
+    position: relative;
+    z-index: 1;
+    top: -30px;  
+    color: rgb(107 114 128);
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.info p {
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    top: -30px;
+    color: rgb(156 163 175);
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+
+.interest {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.interest span {
+    position: relative;
+    display: flex;
+    border: 1px solid rgb(52, 52, 52);
+    height: 24px;
+    width: 80px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 3px;
+    color: rgb(156 163 175);
+    font-size: 12px;
+    border-radius: 50px;
+
+}
+
+.interest img {
+    height: 14px;
+    width: 14px;
+    padding-right: 10px;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+}
+
+.social img {
+    height: 25px;
+    width: 25px;
+    margin-right: 10px;
+}
+
+.social span {
+    position: relative;
+    display: flex;
+    align-items: center;
+    top: 50px;
+    color: rgb(224 231 255);
+    font-weight: 600;
+    margin-right: 10px
+}
+
+.social a {
+    display: flex;
+    align-items: center;
+}
+
+#discord {
+    cursor: pointer;
+}
+
+.copied {
+    display: flex;
+    justify-content: center;
+}
+
+.copied p {
+    display: flex;
+    width: 160px;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    color: white;
+    padding: 7px;
+    border-radius: 10px;
+    background-color: rgb(33, 33, 33);
+}
+
+.copied p img {
+    height: 30px;
+    margin-right: 10px;
+}
+
+.github {
+    display: flex;
+    position: relative;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    top: 60px;
+    background-color: rgb(41, 41, 41);
+    width: 550px;
+    height: 45px;
+    border-radius: 3px;
+}
+
+.github span {
+    padding: 0 110px;
+}
+
+.arrow {
+    opacity: 0;
+    transition: 0.2s;
+}
+
+.github:hover .arrow {
+    opacity: 1;
+}
+
+.owner{
+    position: relative;
+    top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(109, 249, 156);
+}
+
+.owner i{
+    padding-right: 10px;
+}
+
+
+.small-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 100px;
+}
+
+.small-container img{
+    margin-top: 50px;
+    width: 150px;
+}
+
+.small-container h2{
+    color: white;
+}
+
+
+.small-container p{
+    color: rgb(156 163 175);
+    text-align: center;
+}
+
+.small-container a{
+    color: white;
+}
+
+a{
+    text-decoration: none;
+}
+
+.small-container-2{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 10px;
+}
+
+
+
+.small-container-2 p{
+    color: rgb(156 163 175);
+}
+
+.small-container-2 h2, h3{
+    color: white;
+}
+
+.small-container-2 h2{
+    margin-top: 100px;
+}
+
+h2{
+    text-align: center;
+}
+
+.web-dev{
+    width: 25%;
+    float: right;
+    padding-left: 10px;
+}
+
+.skill-row{
+    width: 50%;
+    margin: 100px auto 100px auto;
+    text-align: left;
+    line-height: 23px;
+}
+
+.coding{
+    width: 25%;
+    float: left;
+    padding-right: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    .github {
+        display: flex;
+        position: relative;
+        color: white;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        width: 150px;
+        height: 45px;
+    }
+
+    .github span {
+        padding: 0 10px;
+    }
+}
