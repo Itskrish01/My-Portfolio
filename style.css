@@ -16,6 +16,7 @@ body {
     margin: 0 100px;
 }
 
+
 .upper-part {
     background-size: cover;
     background-position: center;
@@ -76,6 +77,10 @@ body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+}
+
+.info{
+    text-align: center;
 }
 
 .interest span {
@@ -255,7 +260,7 @@ h2{
 
 .skill-row{
     width: 50%;
-    margin: 100px auto 100px;
+    margin: 100px auto 100px auto;
     text-align: left;
     line-height: 23px;
 }
